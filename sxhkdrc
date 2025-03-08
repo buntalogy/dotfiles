@@ -1,0 +1,51 @@
+# EMACS DAEMON
+super + shift + e
+    emacsclient -c -a ''
+
+# SLEEP
+super + shift + s
+    xset dpms force off
+
+# MAIM FULL
+super + shift + p
+    maim ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png
+
+# MAIM SELECTION
+super + shift + o
+    maim -s ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png
+
+# XCALIB INVERT
+super + shift + i
+    xcalib -invert -alter
+
+# BOOMER
+super + shift + z
+    boomer
+
+# SWAPCAPS
+super + shift + k
+    setxkbmap -option ctrl:swapcaps
+
+# MUTE
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# VOLUME DOWN
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -10%
+
+# VOLUME UP
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +10%
+
+# MIC MUTE
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# BRIGHTNESS DOWN
+XF86MonBrightnessDown
+    brightnessctl set 10%-
+
+# BRIGHTNESS UP
+XF86MonBrightnessUp
+    brightnessctl set +10%

@@ -1,0 +1,10 @@
+[user]
+	name = BUNTA
+	email = buntalogy@gmail.com
+[core]
+	editor = emacs
+	autocrlf = input
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
