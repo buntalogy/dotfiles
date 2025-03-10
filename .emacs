@@ -47,6 +47,9 @@
 (use-package web-mode
   :mode (("\\.html?\\'" . web-mode)))
 
+(use-package company
+  :init (global-company-mode 1))
+
 (use-package lua-mode)
 (use-package solidity-mode)
 (use-package typescript-mode)
