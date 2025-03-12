@@ -23,6 +23,7 @@
 
 (global-auto-revert-mode 1)
 (global-goto-address-mode 1)
+(global-visual-wrap-prefix-mode 1)
 (global-hl-line-mode 1)
 (auto-save-visited-mode 1)
 (delete-selection-mode 1)
@@ -41,10 +42,6 @@
   (interactive)
   (open-random-file "~/Vault/Notes/"))
 
-(use-package adaptive-wrap
-  :hook (text-mode . adaptive-wrap-prefix-mode)
-  :hook (prog-mode . adaptive-wrap-prefix-mode))
-
 (use-package multiple-cursors
   :bind ("C-S-c C-S-c" . mc/edit-lines))
 
@@ -53,9 +50,6 @@
          ("M-<down>" . move-text-down)
          ("M-p" . move-text-up)
          ("M-n" . move-text-down)))
-
-(use-package company
-  :init (global-company-mode 1))
 
 (use-package web-mode
   :mode (("\\.html?\\'" . web-mode)))
