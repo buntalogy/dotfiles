@@ -26,10 +26,21 @@
 (global-hl-line-mode 1)
 (auto-save-visited-mode 1)
 (delete-selection-mode 1)
+(fido-mode 1)
 
 (add-hook 'text-mode-hook 'visual-line-mode)
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 (add-hook 'dired-mode-hook 'dired-hide-details-mode)
+
+(defun open-random-file (directory)
+  (interactive)
+  (let* ((files (directory-files directory t "\\.txt\\'"))
+         (random-file (nth (random (length files)) files)))
+    (find-file random-file)))
+
+(defun random-note ()
+  (interactive)
+  (open-random-file "~/Vault/Notes/"))
 
 (use-package adaptive-wrap
   :hook (text-mode . adaptive-wrap-prefix-mode)
@@ -44,22 +55,11 @@
          ("M-p" . move-text-up)
          ("M-n" . move-text-down)))
 
-(use-package web-mode
-  :mode (("\\.html?\\'" . web-mode)))
-
 (use-package company
   :init (global-company-mode 1))
 
+(use-package web-mode
+  :mode (("\\.html?\\'" . web-mode)))
+
 (use-package lua-mode)
 (use-package solidity-mode)
-(use-package typescript-mode)
-
-(defun open-random-file (directory)
-  (interactive)
-  (let* ((files (directory-files directory t "\\.txt\\'"))
-         (random-file (nth (random (length files)) files)))
-    (find-file random-file)))
-
-(defun random-note ()
-  (interactive)
-  (open-random-file "~/Vault/Notes/"))
