@@ -26,7 +26,6 @@
 (global-hl-line-mode 1)
 (auto-save-visited-mode 1)
 (delete-selection-mode 1)
-(fido-mode 1)
 
 (add-hook 'text-mode-hook 'visual-line-mode)
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
