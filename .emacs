@@ -15,7 +15,7 @@
       eshell-directory-name "~/.emacs.d/eshell/"
       eshell-banner-message "")
 
-(load-theme 'modus-vivendi t)
+(load-theme 'modus-vivendi-tritanopia t)
 
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -51,8 +51,6 @@
          ("M-p" . move-text-up)
          ("M-n" . move-text-down)))
 
-(use-package web-mode
-  :mode (("\\.html?\\'" . web-mode)))
-
+(use-package web-mode)
 (use-package lua-mode)
-(use-package solidity-mode)
+(use-package go-mode)
