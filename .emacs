@@ -20,7 +20,6 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-
 (global-auto-revert-mode 1)
 (global-goto-address-mode 1)
 (global-visual-wrap-prefix-mode 1)
