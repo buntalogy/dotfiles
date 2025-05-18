@@ -1,4 +1,0 @@
-(setf *mouse-focus-policy* :sloppy)
-(setf *screen-mode-line-format* (list "%W^>%d"))
-(setf *mode-line-timeout* 1)
-(mode-line)
