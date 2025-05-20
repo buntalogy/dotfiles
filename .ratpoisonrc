@@ -1,4 +1,3 @@
 exec ratpoison-sloppymove
-exec nitrogen --restore
 bind c exec st
 bind C-c exec st
