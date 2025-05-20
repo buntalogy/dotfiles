@@ -1,0 +1,6 @@
+escape C-t
+exec while true; do date > ~/.config/sdorfehs/bar; sleep 1; done
+exec nitrogen --restore
+set fwcolor #444444
+bind c exec st
+bind C-c exec st

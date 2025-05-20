@@ -1,1 +1,3 @@
 exec ratpoison-sloppymove
+bind c exec st
+bind C-c exec st
