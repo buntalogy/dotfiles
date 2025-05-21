@@ -4,3 +4,4 @@ exec nitrogen --restore
 set fwcolor #444444
 bind c exec st
 bind C-c exec st
+bind r exec rofi -show run

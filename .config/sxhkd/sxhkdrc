@@ -2,10 +2,6 @@
 super + shift + e
     emacsclient -c -a ''
 
-# DMENU
-super + p
-    dmenu_run
-
 # SLEEP
 super + shift + s
     xset dpms force off
