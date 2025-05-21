@@ -2,6 +2,10 @@
 super + shift + e
     emacsclient -c -a ''
 
+# ROFI
+super + shift + d
+    rofi -show run
+
 # SLEEP
 super + shift + s
     xset dpms force off
