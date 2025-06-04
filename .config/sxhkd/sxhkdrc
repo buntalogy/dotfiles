@@ -4,7 +4,8 @@ super + shift + e
 
 # ROFI
 super + shift + d
-    rofi -show run
+#    rofi -show run
+     dmenu_run
 
 # SLEEP
 super + shift + s
