@@ -2,9 +2,8 @@
 super + shift + e
     emacsclient -c -a ''
 
-# ROFI
-super + shift + d
-#    rofi -show run
+# DMENU
+super + p
      dmenu_run
 
 # SLEEP
