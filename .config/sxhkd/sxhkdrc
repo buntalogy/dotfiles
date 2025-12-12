@@ -3,7 +3,7 @@ super + shift + e
     emacsclient -c -a ''
 
 # DMENU
-super + p
+super + shift + d
      dmenu_run
 
 # SLEEP

@@ -1,9 +1,9 @@
 autorandr dock
 xset -b
 xset dpms 0 0 900
-syncthing &
 setxkbmap -option ctrl:swapcaps
-sxhkd &
-slstatus &
-emacs --daemon
 ibus-daemon -drx
+
+sxhkd &
+syncthing &
+emacs --daemon &
