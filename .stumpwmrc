@@ -1,3 +1,5 @@
 (setf *window-border-style* :thin)
 (setf *mouse-focus-policy* :sloppy)
 (set-focus-color "gray50")
+(define-key *root-map* (kbd "c") "exec st")
+(define-key *root-map* (kbd "C-c") "exec st")
