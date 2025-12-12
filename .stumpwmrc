@@ -1,2 +1,3 @@
 (setf *window-border-style* :thin)
 (setf *mouse-focus-policy* :sloppy)
+(set-focus-color "gray50")
