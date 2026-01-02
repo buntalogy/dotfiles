@@ -3,3 +3,4 @@
 (set-focus-color "gray50")
 (define-key *root-map* (kbd "c") "exec st")
 (define-key *root-map* (kbd "C-c") "exec st")
+(run-shell-command "xsetroot -solid 'black'")

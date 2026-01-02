@@ -1,0 +1,10 @@
+sxhkd &
+autorandr dock
+ratpoison-sloppymove
+xset -b
+xset dpms 0 0 900
+syncthing &
+setxkbmap -option ctrl:swapcaps
+slstatus &
+emacs --daemon
+ibus-daemon -drx
