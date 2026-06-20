@@ -51,4 +51,3 @@
          ("M-n" . move-text-down)))
 
 (use-package web-mode)
-(use-package lua-mode)

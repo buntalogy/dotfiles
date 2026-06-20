@@ -9,7 +9,7 @@
       initial-major-mode 'text-mode
       vc-follow-symlinks t
       delete-by-moving-to-trash t
-      backup-directory-alist '(("." . "~/Vault/Temp"))
+      backup-directory-alist '(("." . "~/Notes/Temp"))
       custom-file (make-temp-file "emacs-custom")
       default-input-method "spanish-prefix"
       eshell-directory-name "~/.emacs.d/eshell/"
@@ -39,7 +39,7 @@
 
 (defun random-note ()
   (interactive)
-  (open-random-file "~/Vault/Notes/"))
+  (open-random-file "~/Notes/"))
 
 (use-package multiple-cursors
   :bind ("C-S-c C-S-c" . mc/edit-lines))
@@ -52,4 +52,3 @@
 
 (use-package web-mode)
 (use-package lua-mode)
-(use-package go-mode)
