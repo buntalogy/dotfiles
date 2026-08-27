@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
@@ -49,5 +51,3 @@
          ("M-<down>" . move-text-down)
          ("M-p" . move-text-up)
          ("M-n" . move-text-down)))
-
-(use-package web-mode)
